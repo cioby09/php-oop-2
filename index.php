@@ -30,7 +30,30 @@ require_once __DIR__ . "/models/db.php";
 </head>
 
 <body>
+    <header class="text-center">
+        <h1>BooleanPetShop</h1>
+    </header>
 
+    <main class="overflow-auto">
+        <div class="container p-3">
+            <div class="row row-cols-3">
+                <?php foreach ($products as $product) { ?>
+                    <div class="col g-4">
+                        <div class="card p-3">
+                            <img src="<?php echo $product->img; ?>" class="card-img-top" alt="Product">
+                            <div class="card-body">
+                                <h2 class="card-title"><?php echo $product->name; ?></h2>
+                                <p class="card-text"><?php echo $product->description; ?></p>
+                                <p class="card-text">Prezzo: <?php echo $product->price; ?></p>
+                                <p class="card-text">Tipo: <?php echo $product->type; ?></p>
+                                <p class="card-text">Categoria: <?php echo $product->category; ?></p>
+                            </div>
+                        </div>
+                    </div>
+                <?php } ?>
+            </div>
+        </div>
+    </main>
 </body>
 
 </html>

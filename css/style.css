@@ -1,0 +1,18 @@
+header {
+    height: 80px;
+    background-color: #00E165;
+}
+
+header h1 {
+    color: #001533;
+    line-height: 80px;
+}
+
+main {
+    height: calc(100vh - 80px);
+    background-color: #001533;
+}
+
+main .card {
+    height: 100%;
+}
