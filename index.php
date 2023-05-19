@@ -4,7 +4,8 @@ require_once __DIR__ . "/models/products.php";
 require_once __DIR__ . "/models/food.php";
 require_once __DIR__ . "/models/kennels.php";
 require_once __DIR__ . "/models/toys.php";
-require_once __DIR__ - "/models/categories.php";
+require_once __DIR__ . "/models/categories.php";
+require_once __DIR__ . "/models/db.php";
 
 ?>
 
