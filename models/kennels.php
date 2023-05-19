@@ -7,9 +7,9 @@ class Kennels extends Products
     public $type;
     public $model;
 
-    function __construct($_name, $_description, $_quantity, $_price, $_category, $_img, $_type, $_model)
+    function __construct($_name, $_description, $_quantity, $_category, $_img, $_type, $_model)
     {
-        parent::__construct($_name, $_description, $_quantity, $_price, $_category, $_img);
+        parent::__construct($_name, $_description, $_quantity, $_category, $_img);
         $this->type = $_type;
         $this->model = $_model;
     }

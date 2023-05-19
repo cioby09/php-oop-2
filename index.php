@@ -44,7 +44,7 @@ require_once __DIR__ . "/models/db.php";
                             <div class="card-body">
                                 <h2 class="card-title"><?php echo $product->name; ?></h2>
                                 <p class="card-text"><?php echo $product->description; ?></p>
-                                <p class="card-text">Prezzo: <?php echo $product->price; ?></p>
+                                <p class="card-text">Prezzo: <?php echo $product->getPrice(); ?> €</p>
                                 <p class="card-text">Tipo: <?php echo $product->type; ?></p>
                                 <p class="card-text">Categoria: <?php echo $product->category; ?></p>
                             </div>
